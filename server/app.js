@@ -5,8 +5,6 @@ const app = express();
 
 app.use('/website',express.static(path.join(__dirname, 'public')));
 
-app.use('/website',express.static(path.join(__dirname, 'public')));
-
 app.use((req, res) => {
     res.status(404);
     res.send(`<h1>Error 404: Resource not found</h1>`)
