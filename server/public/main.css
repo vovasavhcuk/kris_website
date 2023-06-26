@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+@media only screen and (min-width: 992px) {
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -263,4 +264,40 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     text-align: center;
     color: #4B4B4B;
+  }
+}
+  @media only screen and (max-width: 600px) {
+    .button{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 24px;
+      line-height: 29px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      color: #000000;
+      position: relative;
+      cursor: pointer;
+      width: 5%;
+      height: 2%;
+      background: #F4F0F0;
+    }
+    .categories_row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 -10px;
+    }
+    .category{
+      display: flex;
+      width: 6%;
+      height: 2%;
+      border-radius: 15px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
   }
